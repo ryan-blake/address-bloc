@@ -26,5 +26,4 @@ RSpec.describe Entry do
      expect(entry.to_s).to eq(expected_string)
    end
  end
-
 end

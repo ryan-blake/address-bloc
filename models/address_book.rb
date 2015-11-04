@@ -7,6 +7,11 @@ class AddressBook
    @entries = []
 end
 
+# Search AddressBook for a specific entry by name
+def binary_search(name)
+    return nil
+  end
+
 
 def remove_entry(name, phone_number, email)
    deleted_entry = nil

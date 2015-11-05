@@ -12,7 +12,15 @@ RSpec.describe AddressBook do
     expect(entry.email).to eql expected_email
   end
 
-  
+  describe "#annihilate" do
+    it "annihilates all entries in csv" do
+      book.add_entry("Ada Love", "343-343-2233", "Adalove@love.com")
+      book.add_entry("Ada Love", "343-343-2233", "Adalove@love.com")
+      book.add_entry("Ada Love", "343-343-2233", "Adalove@love.com")
+
+      book.annihilate
+      expect(book.entries.size).to eq(0)
+    end
 
   # #2
   describe "attributes" do

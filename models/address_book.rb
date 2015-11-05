@@ -8,7 +8,11 @@ class AddressBook
    @entries = []
 end
 
-
+def annihilate
+  entries.each do |entry|
+    @AddressBook.entries.entry.delete
+  end
+end
 
 def iterate_search(name)
  @entries.each do |entry|

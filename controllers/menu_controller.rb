@@ -39,7 +39,8 @@ end
     puts "3 - Search for an entry"
     puts "4 - Import entries from a CSV"
     puts "5 - Search for entry by number"
-    puts "6 - Exit"
+    puts "6 - annihilate all entries"
+    puts "7 - Exit"
     print "Enter your selection: "
 
 # #3
@@ -76,6 +77,12 @@ end
       main_menu
 
     when 6
+      system "clear"
+      annihilate
+      main_menu
+
+
+    when 7
       puts "good-bye!"
 
       exit(0)
